@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Quick Sort Visualizer</title>
+<title>Quick Sort Visualizer by Group 4</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
     body {
         font-family: "Segoe UI", Arial, sans-serif;
@@ -38,12 +39,12 @@
         margin-top: 20px; padding: 15px; border-radius: 10px;
         background: #f9fafc; border-left: 5px solid #3498db;
     }
-    .array { font-size: 20px; margin-top: 10px; }
+    .array { font-size: 20px; margin-top: 10px; word-wrap: break-word; }
     .pivot { color: #e74c3c; font-weight: bold; }
 
     .history-item {
         margin-top: 8px; padding-left: 10px; border-left: 3px solid #bbb;
-        font-size: 15px; color: #333;
+        font-size: 15px; color: #333; word-wrap: break-word;
     }
 
     #explain p {
@@ -52,16 +53,26 @@
         border-left: 3px solid #3498db;
         font-size: 15px;
         color: #333;
+        word-wrap: break-word;
     }
 
     .step-indicator { text-align: center; margin-top: 15px; color: #555; }
-    .sorted { font-weight: bold; color: #2ecc71; margin-top: 15px; text-align: center; font-size: 18px; }
+    .sorted { font-weight: bold; color: #2ecc71; margin-top: 15px; text-align: center; font-size: 18px; word-wrap: break-word; }
+
+    @media screen and (max-width: 600px) {
+        .container { margin: 20px 10px; padding: 20px; }
+        input { width: 100%; }
+        button { width: 48%; margin-bottom: 8px; }
+        .array { font-size: 16px; }
+        .step-indicator { font-size: 14px; }
+        .subtitle { font-size: 14px; }
+    }
 </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Quick Sort – Step by Step</h1>
+    <h1>Quick Sort – Step by Step by Group 4</h1>
     <div class="subtitle">Current step shows pivot clearly, previous steps and explanations are preserved</div>
 
     <div class="controls">
